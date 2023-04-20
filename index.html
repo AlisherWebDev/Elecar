@@ -4,11 +4,83 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="scss/style.css" />
     <title>Document</title>
   </head>
   <body>
-    <p>salom</p>
-    hayr dgf
+    <!-- ..................... HEADER START ...................................... -->
+    <header>
+      <div class="container">
+        <div class="shadow-fon"></div>
+        <nav class="nav">
+          <a class="nav__logo" href="#"
+            ><img src="images/Logo.svg" alt="logo img" />
+            <span class="nav__logo--text">Elecar</span></a
+          >
+          <ul class="nav__list">
+            <li class="nav__list--item">
+              <a class="nav__list--item-link" href="#">Home</a>
+            </li>
+            <li class="nav__list--item">
+              <a class="nav__list--item-link" href="#">About</a>
+            </li>
+            <li class="nav__list--item">
+              <a class="nav__list--item-link" href="#">Popular</a>
+            </li>
+            <li class="nav__list--item">
+              <a class="nav__list--item-link" href="#">Feature</a>
+            </li>
+            <div id="myNav" class="overlay">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+                >&times;</a
+              >
+              <div class="overlay-content">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Popular</a>
+                <a href="#">Feature</a>
+              </div>
+            </div>
+          </ul>
+          <a onclick="openNav()" class="nav__menu"
+            ><i class="bx bx-menu"></i
+          ></a>
+        </nav>
+      </div>
+    </header>
+    <!-- ..................... HEADER END ...................................... -->
+
+    <!-- ..................... HOME PAGE START...................................... -->
+    <main>
+      <div class="container">
+        <section class="home__page">
+          <h1 class="home__page--tite">Choose The Best Car</h1>
+          <h3 class="home__page--text">Porsche Mission E</h3>
+          <div class="lightning__car">
+            <img src="./images/lightning.svg" alt="lightning" />
+            <span class="lightning__car--text">Electric car</span>
+          </div>
+          <div class="home__car">
+            <img src="images/home_car.svg" alt="home car" />
+          </div>
+          <div class="home__info">
+            <div class="home__info--card">
+              <div class="home__info--card-img">
+                <img src="" alt="" />
+                <h3 class="home__info--degree">24°</h3>
+                <p class="home__info--text"></p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <!-- ..................... HOME PAGE END...................................... -->
+
+    <script src="js/index.js"></script>
   </body>
 </html>
