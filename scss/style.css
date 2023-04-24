@@ -2,8 +2,9 @@
   font-family: exo_font;
   src: url("../fonts/exo/Exo-Regular.ttf");
 }
-.about__page .owl-carousel .carousel__cards .shop__part,
-.about__page .owl-theme .carousel__cards .shop__part, .container .home__page .home__info, .container .home__page .lightning__car, .container .home__page {
+.about__page .owl-carousel .owl-stage-outer .owl-stage .carousel__cards .shop__part,
+.about__page .owl-theme .owl-stage-outer .owl-stage .carousel__cards .shop__part,
+.about__page .owl-loaded .owl-stage-outer .owl-stage .carousel__cards .shop__part, .container .home__page .home__info, .container .home__page .lightning__car, .container .home__page {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -275,74 +276,97 @@ header .container .nav__menu {
   left: 50%;
   transform: translate(0, -50%);
 }
-.about__page .owl-carousel .carousel__cards,
-.about__page .owl-theme .carousel__cards {
+.about__page .owl-carousel .owl-stage-outer .owl-stage .carousel__cards,
+.about__page .owl-theme .owl-stage-outer .owl-stage .carousel__cards,
+.about__page .owl-loaded .owl-stage-outer .owl-stage .carousel__cards {
   background: #111213;
   border-radius: 20px;
   padding: 32px 22px 24px 24px;
   width: 260px;
   position: relative;
 }
-.about__page .owl-carousel .carousel__cards--title,
-.about__page .owl-theme .carousel__cards--title {
+.about__page .owl-carousel .owl-stage-outer .owl-stage .carousel__cards .shadows,
+.about__page .owl-theme .owl-stage-outer .owl-stage .carousel__cards .shadows,
+.about__page .owl-loaded .owl-stage-outer .owl-stage .carousel__cards .shadows {
+  position: absolute;
+  width: 190px;
+  height: 190px;
+  left: 168px;
+  top: 88px;
+  background: rgba(55, 74, 109, 0.5);
+  filter: blur(60px);
+}
+.about__page .owl-carousel .owl-stage-outer .owl-stage .carousel__cards--title,
+.about__page .owl-theme .owl-stage-outer .owl-stage .carousel__cards--title,
+.about__page .owl-loaded .owl-stage-outer .owl-stage .carousel__cards--title {
   font-size: 24px;
   color: #f1f2f3;
   font-weight: 600;
 }
-.about__page .owl-carousel .carousel__cards--car-name,
-.about__page .owl-theme .carousel__cards--car-name {
+.about__page .owl-carousel .owl-stage-outer .owl-stage .carousel__cards--car-name,
+.about__page .owl-theme .owl-stage-outer .owl-stage .carousel__cards--car-name,
+.about__page .owl-loaded .owl-stage-outer .owl-stage .carousel__cards--car-name {
   font-size: 16px;
   color: #babec4;
   font-weight: 400;
   margin-bottom: 12px;
 }
-.about__page .owl-carousel .carousel__cards .brand__img,
-.about__page .owl-theme .carousel__cards .brand__img {
+.about__page .owl-carousel .owl-stage-outer .owl-stage .carousel__cards .brand__img,
+.about__page .owl-theme .owl-stage-outer .owl-stage .carousel__cards .brand__img,
+.about__page .owl-loaded .owl-stage-outer .owl-stage .carousel__cards .brand__img {
   width: 100%;
 }
-.about__page .owl-carousel .carousel__cards .brand__img img,
-.about__page .owl-theme .carousel__cards .brand__img img {
+.about__page .owl-carousel .owl-stage-outer .owl-stage .carousel__cards .brand__img img,
+.about__page .owl-theme .owl-stage-outer .owl-stage .carousel__cards .brand__img img,
+.about__page .owl-loaded .owl-stage-outer .owl-stage .carousel__cards .brand__img img {
   width: 180px;
   float: right;
 }
-.about__page .owl-carousel .carousel__cards .chart__info,
-.about__page .owl-theme .carousel__cards .chart__info {
+.about__page .owl-carousel .owl-stage-outer .owl-stage .carousel__cards .chart__info,
+.about__page .owl-theme .owl-stage-outer .owl-stage .carousel__cards .chart__info,
+.about__page .owl-loaded .owl-stage-outer .owl-stage .carousel__cards .chart__info {
   display: flex;
   flex-direction: column;
   margin-top: 24px;
 }
-.about__page .owl-carousel .carousel__cards .chart__info .chart__info--block,
-.about__page .owl-theme .carousel__cards .chart__info .chart__info--block {
+.about__page .owl-carousel .owl-stage-outer .owl-stage .carousel__cards .chart__info .chart__info--block,
+.about__page .owl-theme .owl-stage-outer .owl-stage .carousel__cards .chart__info .chart__info--block,
+.about__page .owl-loaded .owl-stage-outer .owl-stage .carousel__cards .chart__info .chart__info--block {
   display: flex;
   justify-content: flex-start;
   width: 100%;
   margin-bottom: 13px;
 }
-.about__page .owl-carousel .carousel__cards .chart__info .chart__info--block .chart__info--block-page,
-.about__page .owl-theme .carousel__cards .chart__info .chart__info--block .chart__info--block-page {
+.about__page .owl-carousel .owl-stage-outer .owl-stage .carousel__cards .chart__info .chart__info--block .chart__info--block-page,
+.about__page .owl-theme .owl-stage-outer .owl-stage .carousel__cards .chart__info .chart__info--block .chart__info--block-page,
+.about__page .owl-loaded .owl-stage-outer .owl-stage .carousel__cards .chart__info .chart__info--block .chart__info--block-page {
   display: flex;
   align-items: center;
 }
-.about__page .owl-carousel .carousel__cards .chart__info .chart__info--block .chart__info--block-page img,
-.about__page .owl-theme .carousel__cards .chart__info .chart__info--block .chart__info--block-page img {
+.about__page .owl-carousel .owl-stage-outer .owl-stage .carousel__cards .chart__info .chart__info--block .chart__info--block-page img,
+.about__page .owl-theme .owl-stage-outer .owl-stage .carousel__cards .chart__info .chart__info--block .chart__info--block-page img,
+.about__page .owl-loaded .owl-stage-outer .owl-stage .carousel__cards .chart__info .chart__info--block .chart__info--block-page img {
   width: 20px;
 }
-.about__page .owl-carousel .carousel__cards .chart__info .chart__info--block .chart__info--block-page span,
-.about__page .owl-theme .carousel__cards .chart__info .chart__info--block .chart__info--block-page span {
+.about__page .owl-carousel .owl-stage-outer .owl-stage .carousel__cards .chart__info .chart__info--block .chart__info--block-page span,
+.about__page .owl-theme .owl-stage-outer .owl-stage .carousel__cards .chart__info .chart__info--block .chart__info--block-page span,
+.about__page .owl-loaded .owl-stage-outer .owl-stage .carousel__cards .chart__info .chart__info--block .chart__info--block-page span {
   font-size: 13px;
   color: white;
   font-weight: 400;
   margin-left: 5px;
 }
-.about__page .owl-carousel .carousel__cards .car__price,
-.about__page .owl-theme .carousel__cards .car__price {
+.about__page .owl-carousel .owl-stage-outer .owl-stage .carousel__cards .car__price,
+.about__page .owl-theme .owl-stage-outer .owl-stage .carousel__cards .car__price,
+.about__page .owl-loaded .owl-stage-outer .owl-stage .carousel__cards .car__price {
   font-size: 20px;
   color: white;
   margin-top: 31px;
   font-weight: 600;
 }
-.about__page .owl-carousel .carousel__cards .shop__part,
-.about__page .owl-theme .carousel__cards .shop__part {
+.about__page .owl-carousel .owl-stage-outer .owl-stage .carousel__cards .shop__part,
+.about__page .owl-theme .owl-stage-outer .owl-stage .carousel__cards .shop__part,
+.about__page .owl-loaded .owl-stage-outer .owl-stage .carousel__cards .shop__part {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -352,7 +376,8 @@ header .container .nav__menu {
   border-radius: 20px 0px;
   cursor: pointer;
 }
-.about__page .owl-carousel .carousel__cards .shop__part img,
-.about__page .owl-theme .carousel__cards .shop__part img {
+.about__page .owl-carousel .owl-stage-outer .owl-stage .carousel__cards .shop__part img,
+.about__page .owl-theme .owl-stage-outer .owl-stage .carousel__cards .shop__part img,
+.about__page .owl-loaded .owl-stage-outer .owl-stage .carousel__cards .shop__part img {
   width: 18px;
 }/*# sourceMappingURL=style.css.map */

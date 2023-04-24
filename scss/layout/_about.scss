@@ -42,80 +42,94 @@
     transform: translate(0, -50%);
   }
   .owl-carousel,
-  .owl-theme {
-    .carousel__cards {
-      background: #111213;
-      border-radius: 20px;
-      padding: 32px 22px 24px 24px;
-      width: 260px;
-      position: relative;
-      &--title {
-        font-size: $h2-font-size;
-        color: $title-color;
-        font-weight: $heading-font-weight;
-      }
-      &--car-name {
-        font-size: $normal-font-size;
-        color: $text-color;
-        font-weight: $normal-font-weight;
-        margin-bottom: 12px;
-      }
-      .brand__img {
-        width: 100%;
-        img {
-          width: 180px;
-          float: right;
-        }
-      }
-      // .chart__info START
-      .chart__info {
-        display: flex;
-        flex-direction: column;
-        margin-top: 24px;
-
-        .chart__info--block {
-          display: flex;
-          justify-content: flex-start;
-          width: 100%;
-          margin-bottom: 13px;
-
-          .chart__info--block-page {
-            display: flex;
-            align-items: center;
-
+  .owl-theme,
+  .owl-loaded {
+    .owl-stage-outer {
+      .owl-stage {
+        .carousel__cards {
+          .shadows {
+            position: absolute;
+            width: 190px;
+            height: 190px;
+            left: 168px;
+            top: 88px;
+            background: rgba(55, 74, 109, 0.5);
+            filter: blur(60px);
+          }
+          background: #111213;
+          border-radius: 20px;
+          padding: 32px 22px 24px 24px;
+          width: 260px;
+          position: relative;
+          &--title {
+            font-size: $h2-font-size;
+            color: $title-color;
+            font-weight: $heading-font-weight;
+          }
+          &--car-name {
+            font-size: $normal-font-size;
+            color: $text-color;
+            font-weight: $normal-font-weight;
+            margin-bottom: 12px;
+          }
+          .brand__img {
+            width: 100%;
             img {
-              width: 20px;
-            }
-            span {
-              font-size: $smaller-font-size;
-              color: $white-color;
-              font-weight: $normal-font-weight;
-              margin-left: 5px;
+              width: 180px;
+              float: right;
             }
           }
-        }
-      }
-      // .chart__info END
-      .car__price {
-        font-size: $h3-font-size;
-        color: $white-color;
-        margin-top: 31px;
-        font-weight: 600;
-      }
-      .shop__part {
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        width: 56px;
-        height: 48px;
-        background-color: $first-color;
-        border-radius: 20px 0px;
-        cursor: pointer;
+          // .chart__info START
+          .chart__info {
+            display: flex;
+            flex-direction: column;
+            margin-top: 24px;
 
-        @extend %flexCenter;
+            .chart__info--block {
+              display: flex;
+              justify-content: flex-start;
+              width: 100%;
+              margin-bottom: 13px;
 
-        img {
-          width: 18px;
+              .chart__info--block-page {
+                display: flex;
+                align-items: center;
+
+                img {
+                  width: 20px;
+                }
+                span {
+                  font-size: $smaller-font-size;
+                  color: $white-color;
+                  font-weight: $normal-font-weight;
+                  margin-left: 5px;
+                }
+              }
+            }
+          }
+          // .chart__info END
+          .car__price {
+            font-size: $h3-font-size;
+            color: $white-color;
+            margin-top: 31px;
+            font-weight: 600;
+          }
+          .shop__part {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 56px;
+            height: 48px;
+            background-color: $first-color;
+            border-radius: 20px 0px;
+            cursor: pointer;
+
+            @extend %flexCenter;
+
+            img {
+              width: 18px;
+            }
+          }
         }
       }
     }
