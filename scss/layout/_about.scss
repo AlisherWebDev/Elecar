@@ -1,0 +1,124 @@
+.about__page {
+  .about__page--info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 98px;
+    .about__page--info-text {
+      width: 400px;
+      margin-left: 15px;
+      h3 {
+        color: $title-color;
+        font-size: $h2-font-size;
+        font-weight: $heading-font-weight;
+      }
+      p {
+        color: $text-color;
+        font-size: $normal-font-size;
+        font-weight: $normal-font-weight;
+        margin-top: 24px;
+      }
+      button {
+        background: #4177dc;
+        border-radius: 4px;
+        padding: 14px 32px;
+        gap: 10px;
+        color: $white-color;
+        font-family: 15px;
+        outline: none;
+        border: none;
+        font-weight: 500;
+        cursor: pointer;
+        margin-top: 48px;
+      }
+    }
+  }
+  //   CAROUSEL
+  .owl-dots {
+    position: absolute;
+    bottom: 0 !important;
+    left: 50%;
+    transform: translate(0, -50%);
+  }
+  .owl-carousel,
+  .owl-theme {
+    .carousel__cards {
+      background: #111213;
+      border-radius: 20px;
+      padding: 32px 22px 24px 24px;
+      width: 260px;
+      position: relative;
+      &--title {
+        font-size: $h2-font-size;
+        color: $title-color;
+        font-weight: $heading-font-weight;
+      }
+      &--car-name {
+        font-size: $normal-font-size;
+        color: $text-color;
+        font-weight: $normal-font-weight;
+        margin-bottom: 12px;
+      }
+      .brand__img {
+        width: 100%;
+        img {
+          width: 180px;
+          float: right;
+        }
+      }
+      // .chart__info START
+      .chart__info {
+        display: flex;
+        flex-direction: column;
+        margin-top: 24px;
+
+        .chart__info--block {
+          display: flex;
+          justify-content: flex-start;
+          width: 100%;
+          margin-bottom: 13px;
+
+          .chart__info--block-page {
+            display: flex;
+            align-items: center;
+
+            img {
+              width: 20px;
+            }
+            span {
+              font-size: $smaller-font-size;
+              color: $white-color;
+              font-weight: $normal-font-weight;
+              margin-left: 5px;
+            }
+          }
+        }
+      }
+      // .chart__info END
+      .car__price {
+        font-size: $h3-font-size;
+        color: $white-color;
+        margin-top: 31px;
+        font-weight: 600;
+      }
+      .shop__part {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 56px;
+        height: 48px;
+        background-color: $first-color;
+        border-radius: 20px 0px;
+        cursor: pointer;
+
+        @extend %flexCenter;
+
+        img {
+          width: 18px;
+        }
+      }
+    }
+  }
+  //   CAROUSEL
+}

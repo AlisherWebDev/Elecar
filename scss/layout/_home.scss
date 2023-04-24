@@ -1,0 +1,57 @@
+.container {
+  .home__page {
+    @extend %flexCenter;
+    flex-direction: column;
+    margin-top: 93px;
+    &--tite {
+      color: white;
+      font-size: $h1-font-size;
+    }
+    &--text {
+      color: white;
+      font-size: $h2-font-size;
+    }
+    .lightning__car {
+      @extend %flexCenter;
+      span {
+        color: $text-color;
+        font-size: $normal-font-size;
+        margin-left: 8px;
+      }
+    }
+    .home__car {
+      margin-top: 48px;
+      margin-bottom: 40px;
+    }
+    .home__info {
+      @extend %flexCenter;
+      max-width: 380px;
+      width: 100%;
+      justify-content: space-between;
+
+      .home__info--card {
+        text-align: center;
+        h3 {
+          font-size: $h2-font-size;
+          font-weight: $heading-font-weight;
+          color: $white-color;
+        }
+        p {
+          color: $text-color-light;
+        }
+      }
+    }
+    .button__home--start-img {
+      margin-top: 56px;
+    }
+    .box-shadow {
+      position: absolute;
+      right: 0;
+      bottom: -20%;
+      width: 400px;
+      height: 400px;
+      background: rgba(55, 74, 109, 0.5);
+      filter: blur(90px);
+    }
+  }
+}

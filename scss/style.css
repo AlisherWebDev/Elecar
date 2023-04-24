@@ -2,13 +2,31 @@
   font-family: exo_font;
   src: url("../fonts/exo/Exo-Regular.ttf");
 }
+.about__page .owl-carousel .carousel__cards .shop__part,
+.about__page .owl-theme .carousel__cards .shop__part, .container .home__page .home__info, .container .home__page .lightning__car, .container .home__page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+*::after,
+*::before,
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-style: normal;
+}
+
 .container {
   max-width: 1024px;
   margin: 0 auto;
+  overflow-x: hidden;
 }
 
 body {
   background-color: #0a0a0b;
+  font-family: exo_font;
 }
 
 header {
@@ -165,4 +183,176 @@ header .container .nav__menu {
     color: #fff;
     font-size: 22px;
   }
+}
+.container .home__page {
+  flex-direction: column;
+  margin-top: 93px;
+}
+.container .home__page--tite {
+  color: white;
+  font-size: 36px;
+}
+.container .home__page--text {
+  color: white;
+  font-size: 24px;
+}
+.container .home__page .lightning__car span {
+  color: #babec4;
+  font-size: 16px;
+  margin-left: 8px;
+}
+.container .home__page .home__car {
+  margin-top: 48px;
+  margin-bottom: 40px;
+}
+.container .home__page .home__info {
+  max-width: 380px;
+  width: 100%;
+  justify-content: space-between;
+}
+.container .home__page .home__info .home__info--card {
+  text-align: center;
+}
+.container .home__page .home__info .home__info--card h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: white;
+}
+.container .home__page .home__info .home__info--card p {
+  color: #888b91;
+}
+.container .home__page .button__home--start-img {
+  margin-top: 56px;
+}
+.container .home__page .box-shadow {
+  position: absolute;
+  right: 0;
+  bottom: -20%;
+  width: 400px;
+  height: 400px;
+  background: rgba(55, 74, 109, 0.5);
+  filter: blur(90px);
+}
+
+.about__page .about__page--info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-top: 98px;
+}
+.about__page .about__page--info .about__page--info-text {
+  width: 400px;
+  margin-left: 15px;
+}
+.about__page .about__page--info .about__page--info-text h3 {
+  color: #f1f2f3;
+  font-size: 24px;
+  font-weight: 600;
+}
+.about__page .about__page--info .about__page--info-text p {
+  color: #babec4;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 24px;
+}
+.about__page .about__page--info .about__page--info-text button {
+  background: #4177dc;
+  border-radius: 4px;
+  padding: 14px 32px;
+  gap: 10px;
+  color: white;
+  font-family: 15px;
+  outline: none;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 48px;
+}
+.about__page .owl-dots {
+  position: absolute;
+  bottom: 0 !important;
+  left: 50%;
+  transform: translate(0, -50%);
+}
+.about__page .owl-carousel .carousel__cards,
+.about__page .owl-theme .carousel__cards {
+  background: #111213;
+  border-radius: 20px;
+  padding: 32px 22px 24px 24px;
+  width: 260px;
+  position: relative;
+}
+.about__page .owl-carousel .carousel__cards--title,
+.about__page .owl-theme .carousel__cards--title {
+  font-size: 24px;
+  color: #f1f2f3;
+  font-weight: 600;
+}
+.about__page .owl-carousel .carousel__cards--car-name,
+.about__page .owl-theme .carousel__cards--car-name {
+  font-size: 16px;
+  color: #babec4;
+  font-weight: 400;
+  margin-bottom: 12px;
+}
+.about__page .owl-carousel .carousel__cards .brand__img,
+.about__page .owl-theme .carousel__cards .brand__img {
+  width: 100%;
+}
+.about__page .owl-carousel .carousel__cards .brand__img img,
+.about__page .owl-theme .carousel__cards .brand__img img {
+  width: 180px;
+  float: right;
+}
+.about__page .owl-carousel .carousel__cards .chart__info,
+.about__page .owl-theme .carousel__cards .chart__info {
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+}
+.about__page .owl-carousel .carousel__cards .chart__info .chart__info--block,
+.about__page .owl-theme .carousel__cards .chart__info .chart__info--block {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  margin-bottom: 13px;
+}
+.about__page .owl-carousel .carousel__cards .chart__info .chart__info--block .chart__info--block-page,
+.about__page .owl-theme .carousel__cards .chart__info .chart__info--block .chart__info--block-page {
+  display: flex;
+  align-items: center;
+}
+.about__page .owl-carousel .carousel__cards .chart__info .chart__info--block .chart__info--block-page img,
+.about__page .owl-theme .carousel__cards .chart__info .chart__info--block .chart__info--block-page img {
+  width: 20px;
+}
+.about__page .owl-carousel .carousel__cards .chart__info .chart__info--block .chart__info--block-page span,
+.about__page .owl-theme .carousel__cards .chart__info .chart__info--block .chart__info--block-page span {
+  font-size: 13px;
+  color: white;
+  font-weight: 400;
+  margin-left: 5px;
+}
+.about__page .owl-carousel .carousel__cards .car__price,
+.about__page .owl-theme .carousel__cards .car__price {
+  font-size: 20px;
+  color: white;
+  margin-top: 31px;
+  font-weight: 600;
+}
+.about__page .owl-carousel .carousel__cards .shop__part,
+.about__page .owl-theme .carousel__cards .shop__part {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 56px;
+  height: 48px;
+  background-color: #4177dc;
+  border-radius: 20px 0px;
+  cursor: pointer;
+}
+.about__page .owl-carousel .carousel__cards .shop__part img,
+.about__page .owl-theme .carousel__cards .shop__part img {
+  width: 18px;
 }/*# sourceMappingURL=style.css.map */

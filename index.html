@@ -8,6 +8,16 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <!-- carousel -->
+    <link
+      rel="stylesheet"
+      href="OwlCarousel2-2.3.4/src/scss/owl.carousel.css"
+    />
+    <link
+      rel="stylesheet"
+      href="OwlCarousel2-2.3.4/src/scss/owl.theme.default.css"
+    />
+    <!-- carousel -->
     <link rel="stylesheet" href="scss/style.css" />
     <title>Document</title>
   </head>
@@ -54,33 +64,222 @@
     </header>
     <!-- ..................... HEADER END ...................................... -->
 
-    <!-- ..................... HOME PAGE START...................................... -->
     <main>
+      <!-- ..................... HOME PAGE START...................................... -->
       <div class="container">
         <section class="home__page">
+          <div class="box-shadow"></div>
           <h1 class="home__page--tite">Choose The Best Car</h1>
           <h3 class="home__page--text">Porsche Mission E</h3>
           <div class="lightning__car">
             <img src="./images/lightning.svg" alt="lightning" />
-            <span class="lightning__car--text">Electric car</span>
+            <span>Electric car</span>
           </div>
           <div class="home__car">
             <img src="images/home_car.svg" alt="home car" />
           </div>
           <div class="home__info">
             <div class="home__info--card">
-              <div class="home__info--card-img">
-                <img src="" alt="" />
-                <h3 class="home__info--degree">24°</h3>
-                <p class="home__info--text"></p>
-              </div>
+              <img src="images/Icon_home_temp.svg" alt="" />
+              <h3 class="home__info--degree">24°</h3>
+              <p class="home__info--text">TEMPERATURE</p>
+            </div>
+            <div class="home__info--card">
+              <img src="images/Icon_home_km.svg" alt="" />
+              <h3 class="home__info--degree">873</h3>
+              <p class="home__info--text">MILEAGE</p>
+            </div>
+            <div class="home__info--card">
+              <img src="images/Icon_home_vector.svg" alt="" />
+              <h3 class="home__info--degree">94%</h3>
+              <p class="home__info--text">BATTERY</p>
             </div>
           </div>
+          <img
+            src="images/start.png"
+            alt="button home start"
+            class="button__home--start-img"
+          />
         </section>
       </div>
-    </main>
-    <!-- ..................... HOME PAGE END...................................... -->
+      <!-- ..................... HOME PAGE END...................................... -->
 
+      <!-- ..................... ABOUT PAGE START...................................... -->
+      <section class="about__page">
+        <div class="container">
+          <div class="about__page--info">
+            <div><img src="./images/car__info.svg" alt="car info" /></div>
+            <div class="about__page--info-text">
+              <h3>
+                Machines With <br />
+                Future Technology
+              </h3>
+              <p>
+                See the future with high-performance electric cars produced by
+                renowned brands. They feature futuristic builds and designs with
+                new and innovative platforms that last a long time.
+              </p>
+              <button>Know more</button>
+            </div>
+          </div>
+
+          <!-- ..................... CARUSEL PAGE START...................................... -->
+          <section class="car__carousel">
+            <div class="carusel__title">
+              <h3>Choose Your Electric Car Of The Porsche Brands</h3>
+            </div>
+            <!-- CROUSEL -->
+            <div class="owl-carousel owl-theme">
+              <div class="owl-stage-outer">
+                <div class="owl-stage">
+                  <!-- 1 -->
+                  <div class="carousel__cards">
+                    <h3 class="carousel__cards--title">Porsche</h3>
+                    <p class="carousel__cards--car-name">Turbo S</p>
+                    <div><img src="images/car__brand1.svg" alt="brand1" /></div>
+                    <div class="carousel__cards--speed">
+                      <div class="chart__info">
+                        <div class="chart__info--block">
+                          <!-- 1  .chart__info--block-page -->
+                          <div class="chart__info--block-page">
+                            <img
+                              src="images/speed__icon.svg"
+                              alt="speed icon"
+                            />
+                            <span>3.5 Sec</span>
+                          </div>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                          <!-- 2  .chart__info--block-page -->
+                          <div class="chart__info--block-page">
+                            <img
+                              src="images/chart__icon.svg"
+                              alt="chart icon"
+                            />
+                            <span>356 Km/h </span>
+                          </div>
+                        </div>
+                        <div class="chart__info--block">
+                          <div class="chart__info--block-page">
+                            <img
+                              src="images/gas__station.svg"
+                              alt="chart icon"
+                            />
+                            <span>356 Km/h </span>
+                          </div>
+                        </div>
+                      </div>
+                      <h4 class="car__price">$175900</h4>
+                    </div>
+                    <div class="shop__part">
+                      <img src="images/shop__icon.svg" alt="shop icon" />
+                    </div>
+                  </div>
+
+                  <!-- 2 -->
+                  <div class="carousel__cards">
+                    <h3 class="carousel__cards--title">Porsche</h3>
+                    <p class="carousel__cards--car-name">Turbo S</p>
+                    <div><img src="images/car__brand1.svg" alt="brand1" /></div>
+                    <div class="carousel__cards--speed">
+                      <div class="chart__info">
+                        <div class="chart__info--block">
+                          <!-- 1  .chart__info--block-page -->
+                          <div class="chart__info--block-page">
+                            <img
+                              src="images/speed__icon.svg"
+                              alt="speed icon"
+                            />
+                            <span>3.5 Sec</span>
+                          </div>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                          <!-- 2  .chart__info--block-page -->
+                          <div class="chart__info--block-page">
+                            <img
+                              src="images/chart__icon.svg"
+                              alt="chart icon"
+                            />
+                            <span>356 Km/h </span>
+                          </div>
+                        </div>
+                        <div class="chart__info--block">
+                          <div class="chart__info--block-page">
+                            <img
+                              src="images/gas__station.svg"
+                              alt="chart icon"
+                            />
+                            <span>356 Km/h </span>
+                          </div>
+                        </div>
+                      </div>
+                      <h4 class="car__price">$175900</h4>
+                    </div>
+                    <div class="shop__part">
+                      <img src="images/shop__icon.svg" alt="shop icon" />
+                    </div>
+                  </div>
+
+                  <!-- 3 -->
+                  <div class="carousel__cards">
+                    <h3 class="carousel__cards--title">Porsche</h3>
+                    <p class="carousel__cards--car-name">Turbo S</p>
+                    <div><img src="images/car__brand1.svg" alt="brand1" /></div>
+                    <div class="carousel__cards--speed">
+                      <div class="chart__info">
+                        <div class="chart__info--block">
+                          <!-- 1  .chart__info--block-page -->
+                          <div class="chart__info--block-page">
+                            <img
+                              src="images/speed__icon.svg"
+                              alt="speed icon"
+                            />
+                            <span>3.5 Sec</span>
+                          </div>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                          <!-- 2  .chart__info--block-page -->
+                          <div class="chart__info--block-page">
+                            <img
+                              src="images/chart__icon.svg"
+                              alt="chart icon"
+                            />
+                            <span>356 Km/h </span>
+                          </div>
+                        </div>
+                        <div class="chart__info--block">
+                          <div class="chart__info--block-page">
+                            <img
+                              src="images/gas__station.svg"
+                              alt="chart icon"
+                            />
+                            <span>356 Km/h </span>
+                          </div>
+                        </div>
+                      </div>
+                      <h4 class="car__price">$175900</h4>
+                    </div>
+                    <div class="shop__part">
+                      <img src="images/shop__icon.svg" alt="shop icon" />
+                    </div>
+                  </div>
+                </div>
+                <!-- dots -->
+                <div class="owl-dots">
+                  <div class="owl-dot active"><span></span></div>
+                  <div class="owl-dot"><span></span></div>
+                  <div class="owl-dot"><span></span></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- CROUSEL -->
+          </section>
+        </div>
+      </section>
+
+      <!-- ..................... ABOUT PAGE END...................................... -->
+    </main>
+    <footer>salom</footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
     <script src="js/index.js"></script>
   </body>
 </html>
