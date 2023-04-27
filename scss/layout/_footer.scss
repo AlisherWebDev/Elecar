@@ -1,0 +1,129 @@
+footer {
+  margin-top: 76px;
+
+  .logo__brend {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
+    grid-gap: 2rem;
+    justify-items: center;
+    margin-bottom: 78px;
+    cursor: pointer;
+  }
+  .footer__contacts {
+    position: relative;
+    overflow: hidden;
+    .footer__contact {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      grid-gap: 2rem;
+      margin-top: 72px;
+      margin-bottom: 98px;
+      overflow-y: hidden;
+      .shadow__fon {
+        position: absolute;
+        width: 500px;
+        height: 500px;
+        left: -318px;
+        top: -28px;
+
+        background: rgba(55, 74, 109, 0.5);
+        filter: blur(90px);
+      }
+      .shadow__fon--bottom {
+        position: absolute;
+        width: 400px;
+        height: 400px;
+        left: 1024px;
+        top: 137px;
+
+        background: rgba(55, 74, 109, 0.5);
+        filter: blur(90px);
+      }
+
+      &--item {
+        h3 {
+          font-size: $h3-font-size;
+          color: $title-color;
+          font-weight: 500;
+          margin-bottom: 24px;
+        }
+        ul {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: start;
+          li {
+            padding: 6px 0;
+            a {
+              color: $text-color;
+              font-size: $normal-font-size;
+              font-weight: 400;
+              display: block;
+            }
+          }
+        }
+        .social {
+          display: grid;
+          grid-template-columns: 40px 40px 40px;
+          column-gap: 6px;
+          a {
+            i {
+              color: $white-color;
+              font-size: $h2-font-size;
+            }
+          }
+        }
+      }
+      .company__about {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        .nav__logo {
+          text-decoration: none;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          img {
+            width: 25px;
+          }
+          .nav__logo--text {
+            font-family: exo_font;
+            font-style: normal;
+            font-weight: 600;
+            font-size: $h2-font-size;
+            color: #fff;
+          }
+        }
+        p {
+          color: $text-color;
+          font-size: $normal-font-size;
+          margin-top: 24px;
+          max-width: 198px;
+        }
+      }
+    }
+    .copyright {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 32px;
+      p {
+        color: $text-color-light;
+        font-size: $smaller-font-size;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  footer {
+    .footer__contacts {
+      .footer__contact {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(auto, 1fr)) !important;
+        row-gap: 2rem;
+        justify-items: center;
+      }
+    }
+  }
+}

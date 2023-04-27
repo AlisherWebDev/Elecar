@@ -19,40 +19,40 @@
     />
     <!-- carousel -->
     <link rel="stylesheet" href="scss/style.css" />
-    <title>Document</title>
+    <title>Elecar</title>
   </head>
   <body>
     <!-- ..................... HEADER START ...................................... -->
-    <header>
-      <div class="container">
+    <header class="fixed_top" >
+      <div class="container " id="header" >
         <div class="shadow-fon"></div>
-        <nav class="nav">
-          <a class="nav__logo" href="#"
-            ><img src="images/Logo.svg" alt="logo img" />
-            <span class="nav__logo--text">Elecar</span></a
-          >
+        <nav class="nav" >
+          <a class="nav__logo" href="#">
+          <img src="images/Logo.svg" alt="logo img" /> &nbsp;
+            <span class="nav__logo--text">Elecar</span>
+            </a>
           <ul class="nav__list">
             <li class="nav__list--item">
-              <a class="nav__list--item-link" href="#">Home</a>
+              <a class="nav__list--item-link" href="#home">Home</a>
             </li>
             <li class="nav__list--item">
-              <a class="nav__list--item-link" href="#">About</a>
+              <a class="nav__list--item-link" href="#about">About</a>
             </li>
             <li class="nav__list--item">
-              <a class="nav__list--item-link" href="#">Popular</a>
+              <a class="nav__list--item-link" href="#popular">Popular</a>
             </li>
             <li class="nav__list--item">
-              <a class="nav__list--item-link" href="#">Feature</a>
+              <a class="nav__list--item-link" href="#featured">Feature</a>
             </li>
             <div id="myNav" class="overlay">
               <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
                 >&times;</a
               >
               <div class="overlay-content">
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Popular</a>
-                <a href="#">Feature</a>
+                <a class="overlay-content__link" href="#home">Home</a>
+                <a class="overlay-content__link" href="#about">About</a>
+                <a class="overlay-content__link" href="#popular">Popular</a>
+                <a class="overlay-content__link" href="#featured">Feature</a>
               </div>
             </div>
           </ul>
@@ -65,9 +65,9 @@
     <!-- ..................... HEADER END ...................................... -->
 
     <main>
-      <!-- ..................... HOME PAGE START...................................... -->
       <div class="container">
-        <section class="home__page">
+        <!-- ..................... HOME PAGE START...................................... -->
+        <section class="home__page" id="home">
           <div class="box-shadow"></div>
           <h1 class="home__page--tite">Choose The Best Car</h1>
           <h3 class="home__page--text">Porsche Mission E</h3>
@@ -101,14 +101,14 @@
             class="button__home--start-img"
           />
         </section>
-      </div>
-      <!-- ..................... HOME PAGE END...................................... -->
+        <!-- ..................... HOME PAGE END...................................... -->
 
-      <!-- ..................... ABOUT PAGE START...................................... -->
-      <section class="about__page">
-        <div class="container">
+        <!-- ..................... ABOUT PAGE START...................................... -->
+        <section class="about__page" id="about">
           <div class="about__page--info">
-            <div><img src="./images/car__info.svg" alt="car info" /></div>
+            <div class="about__page--info-car-img">
+              <img src="./images/car__info.svg" alt="car info" />
+            </div>
             <div class="about__page--info-text">
               <h3>
                 Machines With <br />
@@ -124,163 +124,419 @@
           </div>
 
           <!-- ..................... CARUSEL PAGE START...................................... -->
-          <section class="car__carousel">
-            <div class="carusel__title">
-              <h3>Choose Your Electric Car Of The Porsche Brands</h3>
+          <section class="car__carousel" id="popular">
+            <div class="carousel__title">
+              <h3>
+                Choose Your Electric Car <br />
+                Of The Porsche Brands
+              </h3>
             </div>
             <!-- CROUSEL -->
-            <div class="owl-carousel owl-theme owl-loaded">
-              <div class="owl-stage-outer">
-                <div class="owl-stage">
-                  <!-- 1 -->
-                  <div class="carousel__cards">
-                    <div class="shadows"></div>
-                    <h3 class="carousel__cards--title">Porsche</h3>
-                    <p class="carousel__cards--car-name">Turbo S</p>
-                    <div><img src="images/car__brand1.svg" alt="brand1" /></div>
-                    <div class="carousel__cards--speed">
-                      <div class="chart__info">
-                        <div class="chart__info--block">
-                          <!-- 1  .chart__info--block-page -->
-                          <div class="chart__info--block-page">
-                            <img
-                              src="images/speed__icon.svg"
-                              alt="speed icon"
-                            />
-                            <span>3.5 Sec</span>
-                          </div>
-                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                          <!-- 2  .chart__info--block-page -->
-                          <div class="chart__info--block-page">
-                            <img
-                              src="images/chart__icon.svg"
-                              alt="chart icon"
-                            />
-                            <span>356 Km/h </span>
-                          </div>
-                        </div>
-                        <div class="chart__info--block">
-                          <div class="chart__info--block-page">
-                            <img
-                              src="images/gas__station.svg"
-                              alt="chart icon"
-                            />
-                            <span>356 Km/h </span>
-                          </div>
-                        </div>
-                      </div>
-                      <h4 class="car__price">$175900</h4>
-                    </div>
-                    <div class="shop__part">
-                      <img src="images/shop__icon.svg" alt="shop icon" />
-                    </div>
-                  </div>
-
-                  <!-- 2 -->
-                  <div class="carousel__cards">
-                    <h3 class="carousel__cards--title">Porsche</h3>
-                    <p class="carousel__cards--car-name">Turbo S</p>
-                    <div><img src="images/car__brand1.svg" alt="brand1" /></div>
-                    <div class="carousel__cards--speed">
-                      <div class="chart__info">
-                        <div class="chart__info--block">
-                          <!-- 1  .chart__info--block-page -->
-                          <div class="chart__info--block-page">
-                            <img
-                              src="images/speed__icon.svg"
-                              alt="speed icon"
-                            />
-                            <span>3.5 Sec</span>
-                          </div>
-                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                          <!-- 2  .chart__info--block-page -->
-                          <div class="chart__info--block-page">
-                            <img
-                              src="images/chart__icon.svg"
-                              alt="chart icon"
-                            />
-                            <span>356 Km/h </span>
-                          </div>
-                        </div>
-                        <div class="chart__info--block">
-                          <div class="chart__info--block-page">
-                            <img
-                              src="images/gas__station.svg"
-                              alt="chart icon"
-                            />
-                            <span>356 Km/h </span>
-                          </div>
-                        </div>
-                      </div>
-                      <h4 class="car__price">$175900</h4>
-                    </div>
-                    <div class="shop__part">
-                      <img src="images/shop__icon.svg" alt="shop icon" />
-                    </div>
-                  </div>
-
-                  <!-- 3 -->
-                  <div class="carousel__cards">
-                    <h3 class="carousel__cards--title">Porsche</h3>
-                    <p class="carousel__cards--car-name">Turbo S</p>
-                    <div><img src="images/car__brand1.svg" alt="brand1" /></div>
-                    <div class="carousel__cards--speed">
-                      <div class="chart__info">
-                        <div class="chart__info--block">
-                          <!-- 1  .chart__info--block-page -->
-                          <div class="chart__info--block-page">
-                            <img
-                              src="images/speed__icon.svg"
-                              alt="speed icon"
-                            />
-                            <span>3.5 Sec</span>
-                          </div>
-                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                          <!-- 2  .chart__info--block-page -->
-                          <div class="chart__info--block-page">
-                            <img
-                              src="images/chart__icon.svg"
-                              alt="chart icon"
-                            />
-                            <span>356 Km/h </span>
-                          </div>
-                        </div>
-                        <div class="chart__info--block">
-                          <div class="chart__info--block-page">
-                            <img
-                              src="images/gas__station.svg"
-                              alt="chart icon"
-                            />
-                            <span>356 Km/h </span>
-                          </div>
-                        </div>
-                      </div>
-                      <h4 class="car__price">$175900</h4>
-                    </div>
-                    <div class="shop__part">
-                      <img src="images/shop__icon.svg" alt="shop icon" />
-                    </div>
-                  </div>
+            <div class="carousel__block owl-carousel owl-theme owl-loaded">
+              <!-- 1 -->
+              <div class="carousel__cards">
+                <div class="shadows__carousel"></div>
+                <h3 class="carousel__cards--title">Porsche</h3>
+                <p class="carousel__cards--car-name">Turbo S</p>
+                <div class="brand__img">
+                  <img src="images/car__brand1.svg" alt="brand1" />
                 </div>
-                <!-- dots -->
-                <div class="owl-dots">
-                  <div class="owl-dot active"><span></span></div>
-                  <div class="owl-dot"><span></span></div>
-                  <div class="owl-dot"><span></span></div>
+                <div class="carousel__cards--speed">
+                  <div class="chart__info">
+                    <div class="chart__info--block">
+                      <!-- 1  .chart__info--block-page -->
+                      <div class="chart__info--block-page">
+                        <img src="images/speed__icon.svg" alt="speed icon" />
+                        <span>3.5 Sec</span>
+                      </div>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      <!-- 2  .chart__info--block-page -->
+                      <div class="chart__info--block-page">
+                        <img src="images/chart__icon.svg" alt="chart icon" />
+                        <span>356 Km/h </span>
+                      </div>
+                    </div>
+                    <div class="chart__info--block">
+                      <div class="chart__info--block-page">
+                        <img src="images/gas__station.svg" alt="chart icon" />
+                        <span>356 Km/h </span>
+                      </div>
+                    </div>
+                  </div>
+                  <h4 class="car__price">$175900</h4>
+                </div>
+                <div class="shop__part">
+                  <img src="images/shop__icon.svg" alt="shop icon" />
+                </div>
+              </div>
+
+              <!-- 2 -->
+              <div class="carousel__cards">
+                <div class="shadows__carousel"></div>
+                <h3 class="carousel__cards--title">Porsche</h3>
+                <p class="carousel__cards--car-name">Taycan</p>
+                <div class="brand__img">
+                  <img src="images/car__brand2.svg" alt="brand2" />
+                </div>
+
+                <div class="carousel__cards--speed">
+                  <div class="chart__info">
+                    <div class="chart__info--block">
+                      <!-- 1  .chart__info--block-page -->
+                      <div class="chart__info--block-page">
+                        <img src="images/speed__icon.svg" alt="speed icon" />
+                        <span>3.5 Sec</span>
+                      </div>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      <!-- 2  .chart__info--block-page -->
+                      <div class="chart__info--block-page">
+                        <img src="images/chart__icon.svg" alt="chart icon" />
+                        <span>356 Km/h </span>
+                      </div>
+                    </div>
+                    <div class="chart__info--block">
+                      <div class="chart__info--block-page">
+                        <img src="images/gas__station.svg" alt="chart icon" />
+                        <span>356 Km/h </span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <h4 class="car__price">$114,900</h4>
+                </div>
+                <div class="shop__part">
+                  <img src="images/shop__icon.svg" alt="shop icon" />
+                </div>
+              </div>
+
+              <!-- 3 -->
+              <div class="carousel__cards">
+                <div class="shadows__carousel"></div>
+                <h3 class="carousel__cards--title">Porsche</h3>
+                <p class="carousel__cards--car-name">Turbo 5 Cross</p>
+                <div class="brand__img">
+                  <img src="images/car__brand3.svg" alt="brand3" />
+                </div>
+                <div class="carousel__cards--speed">
+                  <div class="chart__info">
+                    <div class="chart__info--block">
+                      <!-- 1  .chart__info--block-page -->
+                      <div class="chart__info--block-page">
+                        <img src="images/speed__icon.svg" alt="speed icon" />
+                        <span>3.5 Sec</span>
+                      </div>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      <!-- 2  .chart__info--block-page -->
+                      <div class="chart__info--block-page">
+                        <img src="images/chart__icon.svg" alt="chart icon" />
+                        <span>356 Km/h </span>
+                      </div>
+                    </div>
+                    <div class="chart__info--block">
+                      <div class="chart__info--block-page">
+                        <img src="images/gas__station.svg" alt="chart icon" />
+                        <span>356 Km/h </span>
+                      </div>
+                    </div>
+                  </div>
+                  <h4 class="car__price">$150,900</h4>
+                </div>
+                <div class="shop__part">
+                  <img src="images/shop__icon.svg" alt="shop icon" />
+                </div>
+              </div>
+              <!-- 4 -->
+              <div class="carousel__cards">
+                <div class="shadows__carousel"></div>
+                <h3 class="carousel__cards--title">Porsche</h3>
+                <p class="carousel__cards--car-name">Boxter 718 S</p>
+                <div class="brand__img">
+                  <img src="images/car__brand1.svg" alt="brand4" />
+                </div>
+                <div class="carousel__cards--speed">
+                  <div class="chart__info">
+                    <div class="chart__info--block">
+                      <!-- 1  .chart__info--block-page -->
+                      <div class="chart__info--block-page">
+                        <img src="images/speed__icon.svg" alt="speed icon" />
+                        <span>3.5 Sec</span>
+                      </div>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      <!-- 2  .chart__info--block-page -->
+                      <div class="chart__info--block-page">
+                        <img src="images/chart__icon.svg" alt="chart icon" />
+                        <span>356 Km/h </span>
+                      </div>
+                    </div>
+                    <div class="chart__info--block">
+                      <div class="chart__info--block-page">
+                        <img src="images/gas__station.svg" alt="chart icon" />
+                        <span>356 Km/h </span>
+                      </div>
+                    </div>
+                  </div>
+                  <h4 class="car__price">$125,900</h4>
+                </div>
+                <div class="shop__part">
+                  <img src="images/shop__icon.svg" alt="shop icon" />
+                </div>
+              </div>
+              <!-- 5 -->
+              <div class="carousel__cards">
+                <div class="shadows__carousel"></div>
+                <h3 class="carousel__cards--title">Porsche</h3>
+                <p class="carousel__cards--car-name">Cayman</p>
+                <div class="brand__img">
+                  <img src="images/car__brand2.svg" alt="brand5" />
+                </div>
+                <div class="carousel__cards--speed">
+                  <div class="chart__info">
+                    <div class="chart__info--block">
+                      <!-- 1  .chart__info--block-page -->
+                      <div class="chart__info--block-page">
+                        <img src="images/speed__icon.svg" alt="speed icon" />
+                        <span>3.5 Sec</span>
+                      </div>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      <!-- 2  .chart__info--block-page -->
+                      <div class="chart__info--block-page">
+                        <img src="images/chart__icon.svg" alt="chart icon" />
+                        <span>356 Km/h </span>
+                      </div>
+                    </div>
+                    <div class="chart__info--block">
+                      <div class="chart__info--block-page">
+                        <img src="images/gas__station.svg" alt="chart icon" />
+                        <span>356 Km/h </span>
+                      </div>
+                    </div>
+                  </div>
+                  <h4 class="car__price">$128,900</h4>
+                </div>
+                <div class="shop__part">
+                  <img src="images/shop__icon.svg" alt="shop icon" />
                 </div>
               </div>
             </div>
-
             <!-- CROUSEL -->
           </section>
-        </div>
-      </section>
+        </section>
+        <!-- ..................... ABOUT PAGE END...................................... -->
 
-      <!-- ..................... ABOUT PAGE END...................................... -->
+        <!-- ..................... FEATURES PAGE START...................................... -->
+        <section class="features__page" id="featured">
+          <div class="features__page--car-img">
+            <img src="images/Features__info.svg" alt="Features car img info" />
+          </div>
+          <div class="features__page--title">
+            <h2>Featured Luxury Cars</h2>
+            <div class="features__page--title-icon">
+              <img src="images/features__icon1.svg" alt="features icon1" />
+              <img src="images/features__icon2.svg" alt="features icon2" />
+              <img src="images/features__icon3.svg" alt="features icon3" />
+              <img src="images/features__icon4.svg" alt="features icon4" />
+            </div>
+          </div>
+          <!-- .features__page--cards START -->
+          <div class="features__page--cards">
+            <!-- 1 -->
+            <div class="carousel__cards">
+              <div class="shadows__carousel"></div>
+              <h3 class="carousel__cards--title">Tesla</h3>
+              <p class="carousel__cards--car-name">Model X</p>
+              <div class="brand__img">
+                <img src="images/car__brand1.svg" alt="brand1" />
+              </div>
+              <div class="carousel__cards--speed">
+               
+                <h4 class="car__price">$98,900</h4>
+              </div>
+              <div class="shop__part">
+                <img src="images/shop__icon.svg" alt="shop icon" />
+              </div>
+            </div>
+            <!-- 2 -->
+            <div class="carousel__cards">
+              <div class="shadows__carousel"></div>
+              <h3 class="carousel__cards--title">Tesla</h3>
+              <p class="carousel__cards--car-name">Model 3</p>
+              <div class="brand__img">
+                <img src="images/car__brand2.svg" alt="brand1" />
+              </div>
+              <div class="carousel__cards--speed">
+                
+                <h4 class="car__price">$45,900</h4>
+              </div>
+              <div class="shop__part">
+                <img src="images/shop__icon.svg" alt="shop icon" />
+              </div>
+            </div>
+            <!-- 3 -->
+            <div class="carousel__cards">
+              <div class="shadows__carousel"></div>
+              <h3 class="carousel__cards--title">Audi</h3>
+              <p class="carousel__cards--car-name">E-tron</p>
+              <div class="brand__img">
+                <img src="images/car__brand3.svg" alt="brand1" />
+              </div>
+              <div class="carousel__cards--speed">
+               
+                <h4 class="car__price">$175,900</h4>
+              </div>
+              <div class="shop__part">
+                <img src="images/shop__icon.svg" alt="shop icon" />
+              </div>
+            </div>
+            <!-- 4 -->
+            <div class="carousel__cards">
+              <div class="shadows__carousel"></div>
+              <h3 class="carousel__cards--title">Porsche</h3>
+              <p class="carousel__cards--car-name">Boxster 987</p>
+              <div class="brand__img">
+                <img src="images/car__brand2.svg" alt="brand1" />
+              </div>
+              <div class="carousel__cards--speed">
+                
+                <h4 class="car__price">$126,900</h4>
+              </div>
+              <div class="shop__part">
+                <img src="images/shop__icon.svg" alt="shop icon" />
+              </div>
+            </div>
+            <!-- 5 -->
+            <div class="carousel__cards">
+              <div class="shadows__carousel"></div>
+              <h3 class="carousel__cards--title">Porsche</h3>
+              <p class="carousel__cards--car-name">Panamera</p>
+              <div class="brand__img">
+                <img src="images/car__brand1.svg" alt="brand1" />
+              </div>
+              <div class="carousel__cards--speed">
+                
+                <h4 class="car__price">$126,900</h4>
+              </div>
+              <div class="shop__part">
+                <img src="images/shop__icon.svg" alt="shop icon" />
+              </div>
+            </div>
+          </div>
+          <!-- .features__page--cards END -->
+        </section>
+        <!-- ..................... FEATURES PAGE END...................................... -->
+      </div>
     </main>
-    <footer>salom</footer>
+
+    <!-- .featured__page--car-info START -->
+    <section class="subscribe__info--car">
+      <div class="featured__page--car-info container">
+        <div class="featured__page--car-info-text">
+          <h2>Do You Want To Receive Special Offers?</h2>
+          <p>
+            Be the first to receive all the information about our products and
+            new cars by email by subscribing to our mailing list.
+          </p>
+          <button>Subscribe Now</button>
+        </div>
+        <div class="featured__page--car-info-img">
+          <img src="images/features__car-info.svg" alt="" />
+        </div>
+      </div>
+    </section>
+    <!--.featured__page--car-info END -->
+
+    <!-- ============= FOOTER PAGE START -->
+    <footer>
+        <section class="logo__brend container">
+          <div class="logo__brend--item">
+            <img src="images/logo_brend1.svg" alt=" logo_brend1" />
+          </div>
+          <div class="logo__brend--item">
+            <img src="images/logo_brend2.svg" alt=" logo_brend2" />
+          </div>
+          <div class="logo__brend--item">
+            <img src="images/logo_brend3.svg" alt=" logo_brend3" />
+          </div>
+          <div class="logo__brend--item">
+            <img src="images/logo_brend4.svg" alt=" logo_brend4" />
+          </div>
+          <div class="logo__brend--item">
+            <img src="images/logo_brend5.svg" alt=" logo_brend5" />
+          </div>
+          <div class="logo__brend--item">
+            <img src="images/logo_brend6.svg" alt=" logo_brend6" />
+          </div>
+        </section>
+        <section class="footer__contacts">
+          <div class="footer__contact container">
+            <div class="shadow__fon"></div>
+            <div class="shadow__fon--bottom"></div>
+            <div class="footer__contact--item company__about">
+              <a class="nav__logo" href="#">
+                <img src="images/Logo.svg" alt="logo img" /> &nbsp;
+                <span class="nav__logo--text">Elecar</span>
+              </a>
+              <p>
+                We offer the best electric cars of the most recognized brands in
+                the world.
+              </p>
+            </div>
+            <div class="footer__contact--item">
+              <h3>Company</h3>
+              <ul>
+                <li><a href="#">About</a></li>
+              </ul>
+              <ul>
+                <li><a href="#">Cars</a></li>
+              </ul>
+              <ul>
+                <li><a href="#">History</a></li>
+              </ul>
+              <ul>
+                <li><a href="#">Shop</a></li>
+              </ul>
+            </div>
+            <div class="footer__contact--item">
+              <h3>Information</h3>
+              <ul>
+                <li><a href="#">Request a quote</a></li>
+              </ul>
+              <ul>
+                <li><a href="#">Find a dealer</a></li>
+              </ul>
+              <ul>
+                <li><a href="#">Contact us</a></li>
+              </ul>
+              <ul>
+                <li><a href="#">Services</a></li>
+              </ul>
+            </div>
+            
+            <div class="footer__contact--item">
+              <h3>Follow Us</h3>
+              <div class="social">
+                <a href="#">
+                  <i class='bx bxl-facebook'></i>
+                </a>
+                <a href="#">
+                  <i class='bx bxl-instagram ' ></i>
+                </a>
+                <a href="#">
+                  <i class='bx bxl-twitter'></i>
+                </a>
+              </div>
+            </div>
+                </div>
+                <div class="copyright">
+                  <p>
+                    <i class='bx bx-copyright'></i>  Bedimcode. All rights reserved
+                  </p>
+                </div>
+        </section>
+      </div>
+    </footer>
+    <!-- ============= FOOTER PAGE START -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script src="OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script src="OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
     <script src="js/index.js"></script>
   </body>
 </html>

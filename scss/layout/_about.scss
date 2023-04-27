@@ -34,49 +34,204 @@
       }
     }
   }
-  //   CAROUSEL
-  .owl-dots {
-    position: absolute;
-    bottom: 0 !important;
-    left: 50%;
-    transform: translate(0, -50%);
-  }
-  .owl-carousel,
-  .owl-theme,
-  .owl-loaded {
-    .owl-stage-outer {
-      .owl-stage {
-        .carousel__cards {
-          .shadows {
-            position: absolute;
-            width: 190px;
-            height: 190px;
-            left: 168px;
-            top: 88px;
-            background: rgba(55, 74, 109, 0.5);
-            filter: blur(60px);
-          }
-          background: #111213;
+  .car__carousel {
+    margin-top: 160px;
+    margin-bottom: 20px;
+    .carousel__title {
+      h3 {
+        margin-bottom: 64px;
+        font-weight: 600;
+        font-size: $h2-font-size;
+        color: $title-color;
+        text-align: center;
+      }
+    }
+    //   CAROUSEL
+    .carousel__block {
+      .owl-dot.active {
+        span {
+          background: #4177dc !important;
+        }
+      }
+      .owl-dots {
+        margin-top: 40px !important;
+      }
+      .carousel__cards {
+        background: #111213;
+        border-radius: 20px;
+        padding: 32px 22px 24px 24px;
+        position: relative;
+        overflow: hidden;
+
+        .shadows__carousel {
+          position: absolute;
           border-radius: 20px;
-          padding: 32px 22px 24px 24px;
-          width: 260px;
-          position: relative;
+          width: 190px;
+          height: 190px;
+          left: 0;
+          top: 0;
+          background: rgba(55, 74, 109, 0.5);
+          filter: blur(60px);
+        }
+
+        &--title {
+          font-size: $h2-font-size;
+          color: $title-color;
+          font-weight: $heading-font-weight;
+        }
+        &--car-name {
+          font-size: $normal-font-size;
+          color: $text-color;
+          font-weight: $normal-font-weight;
+          margin-bottom: 12px;
+        }
+        .brand__img {
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          img {
+            width: 180px;
+          }
+        }
+        // .chart__info START
+        .chart__info {
+          display: flex;
+          flex-direction: column;
+          margin-top: 24px;
+
+          .chart__info--block {
+            display: flex;
+            justify-content: flex-start;
+            margin-bottom: 13px;
+
+            .chart__info--block-page {
+              display: flex;
+              align-items: center;
+
+              img {
+                width: 20px;
+              }
+              span {
+                font-size: $smaller-font-size;
+                color: $white-color;
+                font-weight: $normal-font-weight;
+                margin-left: 5px;
+              }
+            }
+          }
+        }
+        // .chart__info END
+        .car__price {
+          font-size: $h3-font-size;
+          color: $white-color;
+          margin-top: 31px;
+          font-weight: 600;
+        }
+        .shop__part {
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          width: 56px;
+          height: 48px;
+          background-color: $first-color;
+          border-radius: 20px 0px;
+          cursor: pointer;
+
+          @extend %flexCenter;
+
+          img {
+            width: 18px;
+          }
+        }
+      }
+    }
+    //   CAROUSEL
+  }
+}
+
+// ========================== 992px
+@media only screen and (max-width: 992px) {
+  .about__page {
+    .about__page--info {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      flex-direction: column;
+      .about__page--info-car-img {
+        img {
+          width: 100%;
+        }
+      }
+      .about__page--info-text {
+        max-width: 400px;
+        margin-left: 0;
+        margin-top: 48px;
+      }
+    }
+  }
+}
+
+// ========================== 768px
+@media only screen and (max-width: 768px) {
+  .about__page {
+    .about__page--info {
+      .about__page--info-text {
+        h3 {
+          font-size: $mobile-h2-font-size;
+          font-weight: $heading-font-weight;
+        }
+        p {
+          font-size: $mobile-normal-font-size;
+          font-weight: $normal-font-weight;
+          margin-top: 24px;
+        }
+        button {
+          background: #4177dc;
+          border-radius: 4px;
+          padding: 14px 32px;
+          gap: 10px;
+          color: $white-color;
+          font-family: 15px;
+          outline: none;
+          border: none;
+          font-weight: 500;
+          cursor: pointer;
+          margin-top: 48px;
+        }
+      }
+    }
+    .car__carousel {
+      margin-top: 88px;
+      margin-bottom: 0px;
+      .carousel__title {
+        h3 {
+          margin-bottom: 56px;
+          font-size: $mobile-h2-font-size;
+        }
+      }
+      //   CAROUSEL
+      .carousel__block {
+        .owl-dot.active {
+          span {
+            background: #4177dc !important;
+          }
+        }
+        .carousel__cards {
           &--title {
-            font-size: $h2-font-size;
-            color: $title-color;
-            font-weight: $heading-font-weight;
+            font-size: $mobile-h2-font-size;
           }
           &--car-name {
-            font-size: $normal-font-size;
+            font-size: $mobile-normal-font-size;
             color: $text-color;
             font-weight: $normal-font-weight;
             margin-bottom: 12px;
           }
           .brand__img {
-            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
             img {
-              width: 180px;
-              float: right;
+              width: 168px;
             }
           }
           // .chart__info START
@@ -88,7 +243,6 @@
             .chart__info--block {
               display: flex;
               justify-content: flex-start;
-              width: 100%;
               margin-bottom: 13px;
 
               .chart__info--block-page {
@@ -96,12 +250,10 @@
                 align-items: center;
 
                 img {
-                  width: 20px;
+                  width: 13px;
                 }
                 span {
-                  font-size: $smaller-font-size;
-                  color: $white-color;
-                  font-weight: $normal-font-weight;
+                  font-size: $mobile-smaller-font-size;
                   margin-left: 5px;
                 }
               }
@@ -109,17 +261,17 @@
           }
           // .chart__info END
           .car__price {
-            font-size: $h3-font-size;
+            font-size: $mobile-h3-font-size;
             color: $white-color;
-            margin-top: 31px;
+            margin-top: 30px;
             font-weight: 600;
           }
           .shop__part {
             position: absolute;
             bottom: 0;
             right: 0;
-            width: 56px;
-            height: 48px;
+            width: 52px;
+            height: 44px;
             background-color: $first-color;
             border-radius: 20px 0px;
             cursor: pointer;
@@ -127,12 +279,12 @@
             @extend %flexCenter;
 
             img {
-              width: 18px;
+              width: 15px;
             }
           }
         }
       }
+      //   CAROUSEL
     }
   }
-  //   CAROUSEL
 }
